@@ -4,7 +4,7 @@ import SearchBar from './searchbar/SearchBar'
 import HomeBanner from './homebanner/HomeBanner'
 import TrendingTags from './trendingtags/TrendingTags'
 import TopCompanies from './topcompanies/TopCompanies'
-import Top from './topcompanies/Top'
+import FeaturedCompanies from './featuredcompanies/FeaturedCompanies'
 
 
 const HomePage = () => {
@@ -17,6 +17,7 @@ const HomePage = () => {
                 <HomeBanner />
                 <TrendingTags />
                 <TopCompanies />
+                <FeaturedCompanies />
             </div>
         </div>
     )

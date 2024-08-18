@@ -3,11 +3,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import arrow from '../../../../assets/arrow-right.svg'
 import mnclogo1 from '../../../../assets/top-companies/mnc-logo-1.gif'
 import mnclogo2 from '../../../../assets/top-companies/mnc-logo-2.gif'
 import mnclogo3 from '../../../../assets/top-companies/mnc-logo-3.gif'
 import mnclogo4 from '../../../../assets/top-companies/mnc-logo-4.gif'
+import IndustryCard from './IndustryCard';
 
 const Top = () => {
     const prevRef = useRef(null);
@@ -52,20 +52,8 @@ const Top = () => {
 
                 {industryData1.map((data, index) => (
                     <SwiperSlide>
-                        <div key={index} className='flex flex-col justify-center p-5 mr-4 border rounded-[10px] cursor-pointer'>
-                            <div className='flex items-center'>
-                                <a href='#' className='max-w-44 font-bold block overflow-hidden text-ellipsis'>{data.type}</a>
-                                <img src={arrow} className='ml-[6px] w-[14px] h-[14px]' />
-                            </div>
-                            <span className='font-medium text-xs mt-[6px]'>{data.subline}</span>
-                            {/* logos */}
-                            <div className='flex justify-between mt-5 cursor-pointer'>
-                                {data.logos.map((logoSrc, index) => (
-                                    <div key={index} className='flex justify-between border rounded-[7px] overflow-hidden'>
-                                        <img src={logoSrc} className='w-10 h-10' alt={`Company logo ${index + 1}`} />
-                                    </div>
-                                ))}
-                            </div>
+                        <div key={index}>
+                            <IndustryCard data={data} />
                         </div>
                     </SwiperSlide>
                 ))}
@@ -75,7 +63,7 @@ const Top = () => {
             {/* Custom Navigation Buttons */}
             <div
                 ref={prevRef}
-                className="absolute top-1/2 left-0 transform -translate-y-1/2 z-10 flex items-center justify-center w-10 h-10 border-[1px] bg-white rounded-full cursor-pointer"
+                className="absolute top-1/2 left-[-24px] transform -translate-y-1/2 z-10 flex items-center justify-center w-10 h-10 border-[1px] bg-white rounded-full cursor-pointer"
             >
                 <svg
                     className={`w-4 h-4 fill-current`}
@@ -86,7 +74,7 @@ const Top = () => {
             </div>
             <div
                 ref={nextRef}
-                className="absolute top-1/2 right-0 transform -translate-y-1/2 z-10 flex items-center justify-center w-10 h-10 border-[1px] bg-white rounded-full cursor-pointer"
+                className="absolute top-1/2 right-[-24px] transform -translate-y-1/2 z-10 flex items-center justify-center w-10 h-10 border-[1px] bg-white rounded-full cursor-pointer"
             >
                 <svg
                     className={`w-4 h-4 fill-current`}
