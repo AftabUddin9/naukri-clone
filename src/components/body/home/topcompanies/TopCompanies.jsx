@@ -4,7 +4,7 @@ import Top from './Top'
 const TopCompanies = () => {
 
     return (
-        <div>
+        <div className='my-3'>
             {/* headline */}
             <div className='flex justify-center'>
                 <h2 className='font-black text-2xl text-[#121224]'>Top companies hiring now</h2>

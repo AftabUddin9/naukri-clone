@@ -5,7 +5,7 @@ import 'swiper/css/navigation';
 
 const CompanyCard = ({ data }) => {
     return (
-        <div className='max-w-[300px] w-[233.33px] min-h-[294px] py-5 px-[18px] border rounded-2xl cursor-pointer'>
+        <div className='max-w-[300px] w-[233.33px] min-h-[294px] py-5 px-[18px] my-3 border rounded-2xl hover:shadow-lg cursor-pointer'>
             <div className='flex justify-center text-center h-[50px]'>
                 <img src={data.logo} className='w-auto' />
             </div>
@@ -19,7 +19,7 @@ const CompanyCard = ({ data }) => {
                     <span className='font-medium text-xs'>{data.review} reviews</span>
                 </div>
             </div>
-            <div className='flex flex-col justify-center font-medium text-sm mt-3'>
+            <div className='flex flex-col justify-center font-medium text-sm h-10 mt-3'>
                 <p style={{
                     display: '-webkit-box',
                     WebkitLineClamp: '2',

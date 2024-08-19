@@ -5,6 +5,8 @@ import HomeBanner from './homebanner/HomeBanner'
 import TrendingTags from './trendingtags/TrendingTags'
 import TopCompanies from './topcompanies/TopCompanies'
 import FeaturedCompanies from './featuredcompanies/FeaturedCompanies'
+import ExploreBanner from './explorebanner/ExploreBanner'
+import Branding from './branding/Branding'
 
 
 const HomePage = () => {
@@ -18,6 +20,8 @@ const HomePage = () => {
                 <TrendingTags />
                 <TopCompanies />
                 <FeaturedCompanies />
+                <ExploreBanner />
+                <Branding />
             </div>
         </div>
     )
