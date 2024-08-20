@@ -7,6 +7,7 @@ import TopCompanies from './topcompanies/TopCompanies'
 import FeaturedCompanies from './featuredcompanies/FeaturedCompanies'
 import ExploreBanner from './explorebanner/ExploreBanner'
 import Branding from './branding/Branding'
+import JobRoles from './jobroles/JobRoles'
 
 
 const HomePage = () => {
@@ -22,6 +23,7 @@ const HomePage = () => {
                 <FeaturedCompanies />
                 <ExploreBanner />
                 <Branding />
+                <JobRoles />
             </div>
         </div>
     )

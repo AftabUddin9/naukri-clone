@@ -1,6 +1,6 @@
 import React from 'react'
 import CompanySlider from './CompanySlider'
-import FilterBtns from './FilterBtns'
+
 
 const FeaturedCompanies = () => {
     return (

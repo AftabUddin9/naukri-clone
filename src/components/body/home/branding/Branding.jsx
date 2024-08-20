@@ -1,5 +1,6 @@
 import React from 'react'
-import brandImg from '../../../../assets/branding.jpg'
+import brandImg from '../../../../assets/branding/branding.jpg'
+import logo from '../../../../assets/branding/logo.gif'
 
 const Branding = () => {
     return (
@@ -12,7 +13,19 @@ const Branding = () => {
                     }}
                 >
                     {/* left section */}
-                    <div></div>
+                    <div className='mr-0 flex flex-col w-80 cursor-pointer'>
+                        <div className='flex flex-col'>
+                            <div>
+                                <img src={logo} width={50} height={50} className='' />
+                            </div>
+                            <div>
+                                <span className='font-medium text-sm text-white whitespace-nowrap overflow-hidden text-ellipsis max-w-[100%-45px] w-fit'>Persistent</span>
+                            </div>
+                        </div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
                     {/* right section */}
                     <div></div>
                 </div>
