@@ -9,7 +9,7 @@ const Navbar = () => {
         { link: "Services", path: "/services" },
     ];
     return (
-        <div className='shadow-lg max-w-screen-2xl sticky py-2'>
+        <div className='max-w-screen-2xl sticky py-2'>
             <nav className='mx-52 flex flex-row items-center justify-between'>
                 {/* left-side items */}
                 <div className='flex flex-row items-center gap-14 my-2'>

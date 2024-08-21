@@ -13,8 +13,11 @@ import JobRoles from './jobroles/JobRoles'
 const HomePage = () => {
     return (
         <div>
-            <Intro />
-            <SearchBar />
+            <div className='bg-gradient-to-b from-[#f5f4fa] to-[rgba(251,251,253,0)]'>
+                <Intro />
+                <SearchBar />
+            </div>
+
             {/* home body */}
             <div className=' mt-16 mx-52'>
                 <HomeBanner />

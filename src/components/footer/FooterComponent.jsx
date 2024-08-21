@@ -5,7 +5,7 @@ import BottomComponent from './BottomComponent'
 const FooterComponent = () => {
 
     return (
-        <div className='mx-52'>
+        <div className='mx-52 mt-10 mb-16'>
             {/* footer top container */}
             <TopComponent />
 

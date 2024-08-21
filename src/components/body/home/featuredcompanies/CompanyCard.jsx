@@ -1,5 +1,5 @@
 import React from 'react'
-import star from '../../../../assets/featured-companies/star.svg'
+import star from '../../../../assets/star.svg'
 import 'swiper/css';
 import 'swiper/css/navigation';
 

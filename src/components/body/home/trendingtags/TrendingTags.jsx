@@ -32,22 +32,10 @@ const TrendingTags = () => {
     return (
         <div className='pt-5 pb-[30px]'>
             <div className='flex items-center justify-center mb-4'>
-                {dataRow1.map((data, index) => {
-                    return (
-                        <div key={index}>
-                            <Tag data={data} />
-                        </div>
-                    )
-                })}
+                <Tag data={dataRow1} />
             </div>
             <div className='flex items-center justify-center'>
-                {dataRow2.map((data, index) => {
-                    return (
-                        <div key={index}>
-                            <Tag data={data} />
-                        </div>
-                    )
-                })}
+                <Tag data={dataRow2} />
             </div>
         </div>
 

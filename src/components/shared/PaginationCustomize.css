@@ -1,0 +1,20 @@
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+    opacity: 0;
+}
+
+
+.swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+    background-color: #cbcbcb;
+    border-radius: 100%;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+    width: 16px;
+    height: 6px;
+    background-color: #474d6a;
+    border-radius: 16px;
+}

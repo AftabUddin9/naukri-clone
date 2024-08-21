@@ -27,7 +27,7 @@ const Top = () => {
         { type: 'MNC10', subline: '1.9K+ are actively hiring', logos: [mnclogo1, mnclogo2, mnclogo3, mnclogo4] },
         { type: 'MNC11', subline: '1.9K+ are actively hiring', logos: [mnclogo1, mnclogo2, mnclogo3, mnclogo4] },
         { type: 'MNC12', subline: '1.9K+ are actively hiring', logos: [mnclogo1, mnclogo2, mnclogo3, mnclogo4] },
-        { type: 'MNCs13', subline: '1.9K+ are actively hiring', logos: [mnclogo1, mnclogo2, mnclogo3, mnclogo4] },
+        { type: 'MNC13', subline: '1.9K+ are actively hiring', logos: [mnclogo1, mnclogo2, mnclogo3, mnclogo4] },
         { type: 'MNC14', subline: '1.9K+ are actively hiring', logos: [mnclogo1, mnclogo2, mnclogo3, mnclogo4] },
     ];
 
@@ -35,7 +35,7 @@ const Top = () => {
         <div className="relative">
             <Swiper
                 slidesPerView={4.5}
-                spaceBetween={10}
+                spaceBetween={8}
                 slidesPerGroup={4}
                 navigation={{
                     prevEl: prevRef.current,

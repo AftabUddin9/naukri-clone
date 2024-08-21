@@ -7,6 +7,7 @@ import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import '../../../shared/PaginationCustomize.css'
 import JobGrid from './JobGrid';
 
 const JobRoles = () => {
@@ -55,7 +56,7 @@ const JobRoles = () => {
                             <div>
                                 <Swiper
                                     slidesPerView={1}
-                                    spaceBetween={10}
+                                    spaceBetween={8}
                                     slidesPerGroup={1}
                                     navigation={{
                                         prevEl: prevRef.current,
@@ -82,8 +83,6 @@ const JobRoles = () => {
                                     </SwiperSlide>
                                 </Swiper>
                             </div>
-                            {/* pagination */}
-                            <div></div>
                             {/* custom button */}
                             <div>
                                 <NavBtn prevRef={prevRef} nextRef={nextRef} />

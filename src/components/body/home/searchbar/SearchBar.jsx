@@ -21,7 +21,7 @@ const SearchBar = () => {
 
     return (
         <div className='flex justify-center items-center h-full'>
-            <div className='border rounded-full inline-block'>
+            <div className='shadow-xl shadow-[#eae9ef] bg-white rounded-full inline-block'>
                 <div className='flex items-center gap-5 py-4 px-5 font-medium text-lg'>
                     {/* search icon */}
                     <img className='w-6 h-6' src={searchIcon} alt='search icon' />
